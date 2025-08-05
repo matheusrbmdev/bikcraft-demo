@@ -94,3 +94,50 @@ img {
 .bicicleta-descricao a:hover {
   background-color: #c72213;
 }
+
+.titulo-vantagens {
+  display: flex;
+  align-items: center;
+  font-size: 64px;
+  color: #c6c6c6;
+  text-align: right;
+  padding: 40px;
+  text-transform: uppercase;
+}
+
+.bicicleta-vantagens ul {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 100px;
+}
+
+.bicicleta-vantagens h3 {
+  margin-bottom: 10px;
+}
+
+.eletrico,
+.velocidade,
+.rastreador {
+  position: relative;
+}
+.eletrico img {
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+
+.velocidade img {
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+
+.rastreador img {
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
