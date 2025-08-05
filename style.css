@@ -1,0 +1,60 @@
+/* Estilos Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+p {
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Estilos específicos */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  max-width: 1200px;
+  width: 800px;
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.navegacao ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navegacao a {
+  display: block;
+  text-transform: uppercase;
+  color: #111;
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+.navegacao a:hover {
+  background-color: #ee2211;
+  color: #fff;
+}
