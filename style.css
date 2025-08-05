@@ -141,3 +141,11 @@ img {
   top: 0;
   left: -40px;
 }
+
+.rodape {
+  margin-top: 60px;
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  font-weight: 500;
+}
