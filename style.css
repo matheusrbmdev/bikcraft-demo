@@ -19,6 +19,7 @@ p {
 img {
   max-width: 100%;
   display: block;
+  object-fit: cover;
 }
 
 /* Estilos específicos */
@@ -42,6 +43,7 @@ img {
 
 .navegacao ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -148,4 +150,58 @@ img {
   padding: 40px;
   text-align: center;
   font-weight: 500;
+  max-width: 100%;
+}
+
+/* Responsividade */
+@media (min-width: 320px) and (max-width: 900px) {
+  .container {
+    width: 100%;
+    padding: 5px;
+    gap: 50px;
+  }
+
+  .navegacao ul {
+    justify-content: center;
+  }
+
+  .conteudo-principal {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-descricao {
+    align-items: center;
+    text-align: center;
+  }
+
+  .bicicleta-descricao h1 {
+    font-size: 24px;
+  }
+
+  .bicicleta-descricao p {
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .bicicleta-descricao a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .titulo-vantagens {
+    font-size: 32px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .eletrico p,
+  .velocidade p,
+  .rastreador p {
+    font-size: 16px;
+  }
+
+  .rodape p {
+    font-size: 16px;
+  }
 }
