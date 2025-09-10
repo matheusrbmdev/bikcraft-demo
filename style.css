@@ -5,13 +5,14 @@
     --fundo-1: #f7f7f7;
     --fundo-2: #fff;
     --texto: #000;
-    --texto-2: #fff
     --subtitulo: rgba(0, 0, 0, 0.2);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --cor-primaria: #e21;
+    --cor-primaria-escura: #900;
     --fundo-1: #111;
     --fundo-2: #000;
     --texto: #fff;
@@ -79,7 +80,7 @@ img {
 
 .navegacao a:hover {
   background-color: var(--cor-primaria);
-  color: var(--texto);
+  color: #fff;
 }
 
 .conteudo-principal {
