@@ -89,6 +89,7 @@ img {
 }
 
 .bicicleta-descricao {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,6 +97,17 @@ img {
   gap: 20px;
   background-color: var(--fundo-2);
   padding: 40px;
+}
+
+.bicicleta-descricao::after {
+  content: '';
+  display: block;
+  background-color: var(--cor-primaria);
+  width: 50px;
+  height: 3px;
+  top: 20px;
+  right: -25px;
+  position: absolute;
 }
 
 .bicicleta-descricao h1 {
@@ -131,19 +143,62 @@ img {
   text-transform: uppercase;
 }
 
-.bicicleta-vantagens ul {
+.bicicleta-vantagens {
   background-color: var(--fundo-2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 60px 100px;
+  padding: 40px 0;
+}
+
+.bicicleta-vantagens div {
+  padding: 10px 100px;
+  border-left: 4px solid transparent;
+}
+
+.bicicleta-vantagens div:hover {
+  border-color: var(--cor-primaria);
+  background-color: #fafafa;
 }
 
 .bicicleta-vantagens h3 {
   margin-bottom: 10px;
   color: var(--texto);
+}
+
+.eletrico-titulo::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('./img/eletrica.svg') no-repeat center/contain;
+  top: 12px;
+  left: 60px;
+}
+
+.velocidade-titulo::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('./img/velocidade.svg') no-repeat center/contain;
+  top: 12px;
+  left: 60px;
+}
+
+.rastreador-titulo::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('./img/rastreador.svg') no-repeat center/contain;
+  top: 12px;
+  left: 60px;
 }
 
 .eletrico,
@@ -156,24 +211,6 @@ img {
 .velocidade,
 .rastreador {
   color: var(--texto);
-}
-
-.eletrico img {
-  position: absolute;
-  top: 0;
-  left: -40px;
-}
-
-.velocidade img {
-  position: absolute;
-  top: 0;
-  left: -40px;
-}
-
-.rastreador img {
-  position: absolute;
-  top: 0;
-  left: -40px;
 }
 
 .rodape {
@@ -209,6 +246,11 @@ img {
 
   .bicicleta-descricao h1 {
     font-size: 24px;
+  }
+
+  .bicicleta-descricao::after {
+    content: '';
+    display: none;
   }
 
   .bicicleta-descricao p {
